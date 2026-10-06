@@ -6,8 +6,8 @@ T4=[]
 n=int(input("donner le nombre d'éléments:"))
 def remplir(T1,T2):
     for i in range (n):
-        T1[i]=float(input(""))
-        T2[i]=float(input(""))
+        T1[i]=float(input("the x"+str(i)+":"))
+        T2[i]=float(input("the n"+str(i)+":"))
         N+=T1[i]
     return N
 
