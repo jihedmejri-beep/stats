@@ -1,4 +1,4 @@
-from numpy import *
+from numpy import array
 T1=array([0.0]*n)
 T2=array([0.0]*n)
 T3=array([0.0]*n)
@@ -30,6 +30,15 @@ def FFF(T3,T2,N,n):
          T4[i]=T4[i-1]+T3[i]
     print(T4)
 
+def mode(T3,T1):
+    print("mode =", T1[T3.index(max(T3))])
+
+def mediane(T4,T1,n):
+    for i in range (n):
+        if T4[i]>=0.5:
+            print("mediane =", T1[i])
+            break
+
 def mean (T1,T3,n):
     m=0
     for i in range (n):
@@ -51,6 +60,8 @@ remplir(T1,T2)
 N=nomber(T2,n)
 frequence(T3,T2,N,n)
 FFF(T3,T2,N,n)
+mode(T3,T1)
+mediane(T4,T1,n)
 mean(T1,T3,n)
 variance(T1,T3,n)
 deviation(T1,T3,n)
