@@ -29,8 +29,7 @@ def mode(T2,n):
     for i in range (n):
         if T2[i]>max:
             max=T2[i]
-            j=i
-    print("the mode :",T2[j])
+    print("the mode :",max)
 
 
 
