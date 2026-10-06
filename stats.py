@@ -1,14 +1,15 @@
 from numpy import *
+n=int(input("donner le nombre d'éléments:"))
 T1=array([0.0]*n)
 T2=array([0.0]*n)
 T3=array([0.0]*n)
 T4=array([0.0]*n)
-n=int(input("donner le nombre d'éléments:"))
+
 def remplir(T1,T2):
     for i in range (n):
         T1[i]=float(input("the x"+str(i)+":"))
         T2[i]=float(input("the n"+str(i)+":"))
-        N+=T1[i]
+    
     print(T1)
     print(T2)
 
@@ -20,7 +21,7 @@ def nomber(T2,n):
 
 def frequence(T3,T2,N,n):
     for i in range (n):
-            T3[i]=T2/N
+            T3[i]=T2[i]/N
     print(T3)
     
 
@@ -34,14 +35,16 @@ def mean (T1,T3,n):
     m=0
     for i in range (n):
         m+=T1[i]*T3[i]
-    print ("mean =", m)
+    
+    return m
 
 def variance (T1,T3,n):
     m=mean(T1,T3,n)
     s=0
     for i in range (n):
         s+=T1[i]*T1[i]*T3[i]
-    print ("variance =", s-m*m)
+        v=s-m*m
+    return v
 
 def deviation (T1,T3,n):
     v=variance(T1,T3,n)
@@ -51,9 +54,9 @@ remplir(T1,T2)
 N=nomber(T2,n)
 frequence(T3,T2,N,n)
 FFF(T3,T2,N,n)
-mean(T1,T3,n)
-variance(T1,T3,n)
 deviation(T1,T3,n)
+print("mean =", mean(T1,T3,n))
+print("variance =", variance(T1,T3,n))
 
 
 
