@@ -11,7 +11,10 @@ def remplir(T1,T2):
         N+=T1[i]
     print(T1)
     print(T2)
-
+def nomber(T2,n):
+    N=0
+    for i in range (n):
+        N+=T2[i]
     return N
 
 def frequence(T3,T2,N,n):
@@ -20,24 +23,12 @@ def frequence(T3,T2,N,n):
     print(T3)
     
 
-
-
 def FFF(T3,T2,N,n):
     T4[0]=T3[0]
     for i in range (1,n):
          T4[i]=T4[i-1]+T3[i]
     print(T4)
-def mid(T4,T1,n):
-    for i in range (n):
-        if T4[i]>=0.5:
-            print("the med is :",T1[i])
-            break
-def mod(T2,n):
-    max=0
-    for i in range (n):
-        if T2[i]>max:
-            max=T2[i]
-    print("the mod:",max)
+
 
 
 
