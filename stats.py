@@ -33,3 +33,4 @@ def mode(T2,n):
     print("the mode :",T2[j])
 
 
+
