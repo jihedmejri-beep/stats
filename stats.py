@@ -1,4 +1,4 @@
-from numpy
+from numpy import *
 T1=[]
 T2=[]
 T3=[]
