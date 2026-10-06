@@ -10,4 +10,3 @@ def med(T3, T1, n):
             s = T3.index(T3[i])
             break
     print("med = ", T1[s])
-
