@@ -3,7 +3,7 @@ T1=[]
 T2=[]
 T3=[]
 T4=[]
-n=8
+n=int(input("donner le nombre d'éléments:"))
 def remplir(T1,T2):
     for i in range (n):
         T1[i]=float(input(""))
