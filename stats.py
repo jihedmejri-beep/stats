@@ -22,6 +22,7 @@ def FFF(T3,T2,N,n):
          T4[i]=T4[i-1]+T3[i]
 
 def turn_intervals_to_xi(T0,T1): #use if you have intervals
-    for i in range(len(T0)) :
-        interval=T0[i]
-        T1= (interval[0] +interval [1])/2
+    if not T1:
+        for i in range(len(T0)) :
+            interval=T0[i]
+            T1= (interval[0] +interval [1])/2
