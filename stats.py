@@ -9,20 +9,28 @@ def remplir(T1,T2):
         T1[i]=float(input("the x"+str(i)+":"))
         T2[i]=float(input("the n"+str(i)+":"))
         N+=T1[i]
+    print(T1)
+    print(T2)
+
     return N
 
 def frequence(T3,T2,N,n):
     for i in range (n):
             T3[i]=T2/N
+    print(T3)
+    
+
+
 
 def FFF(T3,T2,N,n):
     T4[0]=T3[0]
-    for i in range (1,n-1):
+    for i in range (1,n):
          T4[i]=T4[i-1]+T3[i]
-def mid(T4,T2,n):
+    print(T4)
+def mid(T4,T1,n):
     for i in range (n):
         if T4[i]>=0.5:
-            print("the med is :",T2[i])
+            print("the med is :",T1[i])
             break
 def mod(T2,n):
     max=0
