@@ -1,0 +1,34 @@
+from numpy import *
+T1=[]
+T2=[]
+T3=[]
+T4=[]
+n=int(input("donner le nombre d'éléments:"))
+def remplir(T1,T2):
+    for i in range (n):
+        T1[i]=float(input("the x"+str(i)+":"))
+        T2[i]=float(input("the n"+str(i)+":"))
+        N+=T1[i]
+    print(T1)
+    print(T2)
+def nomber(T2,n):
+    N=0
+    for i in range (n):
+        N+=T2[i]
+    return N
+
+def frequence(T3,T2,N,n):
+    for i in range (n):
+            T3[i]=T2/N
+    print(T3)
+    
+
+def FFF(T3,T2,N,n):
+    T4[0]=T3[0]
+    for i in range (1,n):
+         T4[i]=T4[i-1]+T3[i]
+    print(T4)
+
+
+
+
