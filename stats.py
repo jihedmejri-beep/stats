@@ -24,12 +24,12 @@ def mid(T4,T2,n):
         if T4[i]>=0.5:
             print("the med is :",T2[i])
             break
-def mode(T2,n):
+def mod(T2,n):
     max=0
     for i in range (n):
         if T2[i]>max:
             max=T2[i]
-    print("the mode :",max)
+    print("the mod:",max)
 
 
 
