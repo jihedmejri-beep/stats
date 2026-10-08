@@ -45,13 +45,21 @@ def FFF(T3,T2,N,n):
     print(T4)
 
 def mode(T3,T1):
-    print("mode =", T1[where(max(T3)==T3)[0][0]])
-
+    i=where(max(T3)==T3)[0][0]
+    if not g :
+        print("mode =", T1[i])
+    else: 
+        print("mode =", T0[i])
+        
 def median(T4,T1,n):
     for i in range (n):
         if T4[i]>=0.5:
-            print("mediane =", T1[i])
-            break
+            if not g :
+                print("mediane =", T1[i])
+                break
+            else: 
+                print("mediane =", T0[i])
+                break
 def mean (T1,T3,n):
     m=0
     for i in range (n):
@@ -70,6 +78,7 @@ def variance (T1,T3,n):
 def deviation (T1,T3,n):
     v=variance(T1,T3,n)
     print ("deviation =", v**0.5)
+global g
 g=input("give 0 for numbers and 1 for intervals")
 if g=="0":
     remplir_num(T1,T2)
