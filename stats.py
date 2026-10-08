@@ -1,11 +1,21 @@
 from numpy import *
-n=int(input("donner le nombre d'éléments:"))
+global g ,s
+s=input("give 0 size1 or 1 size2")
+g=input("give 0 for numbers or 1 for intervals")
+n=int(input("donner le nombre d'éléments x:"))
+m=int(input("donner le nombre d'éléments y:"))
 T0 = zeros((n, 2))
 T1=array([0.0]*n)
 T2=array([0.0]*n)
 T3=array([0.0]*n)
 T4=array([0.0]*n)
-
+Ty0= zeros((m,2))
+Ty1= array([0.0]*n)
+Ty2= array([0.0]*n)
+Ty3= array([0.0]*n)
+Ty4= array([0.0]*n)
+A1= zeros((n, m))
+A2= zeros((n, m))
 def remplir_num(T1,T2):
     for i in range (n):
         T1[i]=float(input("the x"+str(i)+":"))
@@ -78,8 +88,6 @@ def variance (T1,T3,n):
 def deviation (T1,T3,n):
     v=variance(T1,T3,n)
     print ("deviation =", v**0.5)
-global g
-g=input("give 0 for numbers and 1 for intervals")
 if g=="0":
     remplir_num(T1,T2)
 else :
@@ -93,9 +101,4 @@ median(T4,T1,n)
 deviation(T1,T3,n)
 print("mean =", mean(T1,T3,n))
 print("variance =", variance(T1,T3,n))
-
-
-
-
-
 
